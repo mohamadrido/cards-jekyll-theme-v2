@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="robots" content="index">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% seo %}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-style:normal;
+  font-size: 12px;
+  background-color: #dedede;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight:300;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 0px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 0 #333;
+  text-align: center;
+  background-color: #333;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.card h3 {
+  padding: 0px 16px 16px 16px;
+  font-weight: 300;
+}
+
+a {
+  color: #dedede;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #333;
+  padding: 15px;
+  color: #dedede;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<header>
+<h2>Responsive Column Cards</h2>
+<p>Resize the browser window to see the effect.</p>
+</header>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+    <a href=""><img src="https://publicdomainmodels.com/assets/images/nissan-ud-quester-gke-370.jpg">
+    <h3>Nissan UD Quester GKE 370 2016</h3></a>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+    <a href=""><img src="https://publicdomainmodels.com/assets/images/koenigsegg-regera.jpg">
+    <h3>Koenigsegg Regera 2015</h3></a>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+    <a href=""><img src="https://publicdomainmodels.com/assets/images/bugatti-chiron.jpg">
+    <h3>Bugatti Chiron 2016</h3></a>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+    <a href=""><img src="https://publicdomainmodels.com/assets/images/koenigsegg-one-1.jpg">
+    <h3>Koenigsegg One:1 2014</h3></a>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+    <a href=""><img src="https://publicdomainmodels.com/assets/images/mitsubishi-fuso-super-great.jpg">
+    <h3>Mitsubishi Fuso Super Great FV-R 2013</h3></a>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+    <a href=""><img src="https://publicdomainmodels.com/assets/images/koenigsegg-agera-rs.jpg">
+    <h3>Koenigsegg Agera RS 2015</h3></a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+&copy; 2021 Grid Cards - Design by <a href="">Mohamad Rido</a> &middot; <a href="">Privacy</a> &middot; <a href="">Help</a> &middot; <a href="">About</a>
+</footer>
+</body>
+</html>
