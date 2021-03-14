@@ -62,21 +62,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   float: right;
 }
 
-.post img {
-  width: 100%;
-  border-radius: 5px;
-}
-
 /* Responsive columns */
 @media screen and (max-width: 900px) {
   .column {
     width: 50%;
     display: block;
     margin-bottom: 0px;
-  }
-  .post img {
-    width: 100%;
-    border-radius: 5px;
   }
 }
 
@@ -104,10 +95,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     float: none;
     display: block;
     text-align: left;
-  }
-  .post img {
-    width: 100%;
-    border-radius: 5px;
   }
 }
 
