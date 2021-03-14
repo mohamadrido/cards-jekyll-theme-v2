@@ -1,7 +1,13 @@
 ---
 layout: default
 ---
-<article>
+<style>
+.post img {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+</style>
+<article class="post">
 {% if page.image %} 
 <img src="{{ page.image }}">
 {% endif %}
