@@ -13,3 +13,15 @@ layout: default
   </div>
   {% endfor %}
 </div>
+<br/>
+{% if paginator.previous_page %}
+{% if paginator.previous_page == 1 %}
+<a style="border: 1px solid #dedede; padding: 10px;" href="{{site.baseurl}}/{{ include.basepath }}" title="Previous Page">Newer</a>
+{% else %}
+<a style="border: 1px solid #dedede; padding: 10px;" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Previous Page">Newer </a>
+{% endif %}
+{% endif %}
+<span> &nbsp; &nbsp; Page {{paginator.page}} of {{paginator.total_pages}} &nbsp; &nbsp; </span>
+{% if paginator.next_page %} 
+<a style="border: 1px solid #dedede; padding: 10px;" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Next Page">Older</a>
+{% endif %} 
