@@ -1,5 +1,5 @@
 ---
-title:  "Martabak Mix"
+title:  "Martabak Terang Bulan"
 categories: [ Food ]
 tags: [ martabak ]
 image: "https://mohamadrido.github.io/grid-jekyll-theme/assets/images/eleventh-post.jpg"
