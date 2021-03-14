@@ -1,2 +1,2 @@
 # grid-jekyll-theme
-Responsive Column Cards V2
+Grid Jekyll Theme - Responsive Column Cards V2 of Cards Jekyll Theme
