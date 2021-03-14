@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .topnav a {
   float: left;
   display: block;
-  color: #333;
+  color: #555;
   text-align: center;
   padding: 5px;
   text-decoration: none;
@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .topnav a:hover {
-  color: #111;
+  color: #333;
 }
 
 .topnav a.active {
