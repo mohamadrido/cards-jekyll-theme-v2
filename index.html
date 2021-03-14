@@ -23,5 +23,5 @@ layout: default
 {% endif %}
 <span style="color: #555;"> &nbsp; &nbsp; Page {{paginator.page}} of {{paginator.total_pages}} &nbsp; &nbsp; </span>
 {% if paginator.next_page %} 
-<a style="color: #444;" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Next Page">Next &raquo;</a>
+<a style="color: #444;" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Next Page">Older &raquo;</a>
 {% endif %} 
