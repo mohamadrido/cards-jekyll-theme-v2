@@ -26,7 +26,7 @@ layout: page
 
 <h2>{{models[0] | capitalize}}</h2>
 {% for post in models[1] %}
-<li><a href="{{post.url}}">{{post.title}}</a></li>
+<a href="{{post.url}}">{{post.title}}</a>
 {% endfor %}
 
 {% endfor %}
