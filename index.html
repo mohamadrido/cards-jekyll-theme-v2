@@ -2,45 +2,23 @@
 layout: default
 ---
 <div class="row">
+  {% for post in paginator.posts %}
   <div class="column">
     <div class="card">
-    <a href=""><img src="https://publicdomainmodels.com/assets/images/nissan-ud-quester-gke-370.jpg">
-    <h3>Nissan UD Quester GKE 370 2016</h3></a>
+    <a href="{{site.baseurl}}{{post.url}}"><img src="{{post.image}}"><h3>{{ post.title }}</h3></a>
     </div>
   </div>
-
-  <div class="column">
-    <div class="card">
-    <a href=""><img src="https://publicdomainmodels.com/assets/images/koenigsegg-regera.jpg">
-    <h3>Koenigsegg Regera 2015</h3></a>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-    <a href=""><img src="https://publicdomainmodels.com/assets/images/bugatti-chiron.jpg">
-    <h3>Bugatti Chiron 2016</h3></a>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-    <a href=""><img src="https://publicdomainmodels.com/assets/images/koenigsegg-one-1.jpg">
-    <h3>Koenigsegg One:1 2014</h3></a>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-    <a href=""><img src="https://publicdomainmodels.com/assets/images/mitsubishi-fuso-super-great.jpg">
-    <h3>Mitsubishi Fuso Super Great FV-R 2013</h3></a>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-    <a href=""><img src="https://publicdomainmodels.com/assets/images/koenigsegg-agera-rs.jpg">
-    <h3>Koenigsegg Agera RS 2015</h3></a>
-    </div>
-  </div>
+  {% endfor %}
 </div>
+<br/>
+{% if paginator.previous_page %}
+{% if paginator.previous_page == 1 %}
+<a style="border: 1px solid #dedede; padding: 10px;" href="{{site.baseurl}}/{{ include.basepath }}" title="Previous Page">Newer</a>
+{% else %}
+<a style="border: 1px solid #dedede; padding: 10px;" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Previous Page">Newer </a>
+{% endif %}
+{% endif %}
+<span> &nbsp; &nbsp; Page {{paginator.page}} of {{paginator.total_pages}} &nbsp; &nbsp; </span>
+{% if paginator.next_page %} 
+<a style="border: 1px solid #dedede; padding: 10px;" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Next Page">Older</a>
+{% endif %}  
