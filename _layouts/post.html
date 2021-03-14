@@ -1,15 +1,9 @@
 ---
 layout: default
 ---
-<style>
-.post img {
-  width: 100%;
-  border-radius: 5px 5px 0px 0px;
-}
-</style>
 <article>
 {% if page.image %} 
-<img class="post" src="{{ page.image }}">
+<img style="width: 100%; border-radius: 5px 5px 0px 0px;" src="{{ page.image }}">
 {% endif %}
 <h2>{{page.title}}</h2>
 {% unless page.metadate == "hide" %} 
