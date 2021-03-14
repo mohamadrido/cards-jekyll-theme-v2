@@ -1,9 +1,32 @@
 ---
 layout: page
 ---
+<div class="row">
+  {% for models in site.categories %}
+  <h2>{{models[0] | capitalize}}</h2>
+  <div class="column">
+    {% for post in models[1] %}
+    <div class="card">
+    <a href="{{site.baseurl}}{{post.url}}">
+    <img src="{{post.image}}">
+    <h3>{{ post.title }}</h3>
+    </a>
+    </div>
+    {% endfor %}
+  </div>
+  
+  {% endfor %}
+</div>
+
+<br/>
+<hr>
+<br/>
+
 {% for models in site.categories %}
-<h3>{{models[0] | capitalize}}</h3>
+
+<h2>{{models[0] | capitalize}}</h2>
 {% for post in models[1] %}
 <li><a href="{{post.url}}">{{post.title}}</a></li>
 {% endfor %}
+
 {% endfor %}
