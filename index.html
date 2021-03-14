@@ -16,12 +16,12 @@ layout: default
 <br/>
 {% if paginator.previous_page %}
 {% if paginator.previous_page == 1 %}
-<a style="color: #444;" href="{{site.baseurl}}/{{ include.basepath }}" title="Previous Page">&laquo; Newer</a>
+<a style="color: #444;" href="{{site.baseurl}}/{{ include.basepath }}" title="Previous Page">&lang; Newer</a>
 {% else %}
-<a style="color: #444;" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Previous Page">&laquo; Prev</a>
+<a style="color: #444;" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Previous Page">&lang; Prev</a>
 {% endif %}
 {% endif %}
 <span style="color: #555;"> &nbsp; &nbsp; Page {{paginator.page}} of {{paginator.total_pages}} &nbsp; &nbsp; </span>
 {% if paginator.next_page %} 
-<a style="color: #444;" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Next Page">Next &raquo;</a>
+<a style="color: #444;" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Next Page">Next &rang;</a>
 {% endif %} 
