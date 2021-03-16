@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% seo %}
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
-<link rel="stylesheet" href="/cards-jekyll-theme-v2/assets/style.css">
+<link rel="stylesheet" href="{{site.baseurl}}/assets/style.css">
 </head>
 <body>
 <header class="topnav" id="myTopnav">
-  <a href="/cards-jekyll-theme-v2" class="active">{{site.name}}</a>
+  <a href="{{site.baseurl}}" class="active">{{site.name}}</a>
   <div class="header-right">
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
-  <a href="/cards-jekyll-theme-v2/categories">Categories</a>
-  <a href="/cards-jekyll-theme-v2/contact">Contact</a>
-  <a href="/cards-jekyll-theme-v2/about">About</a>
+  <a href="{{site.baseurl}}/categories">Categories</a>
+  <a href="{{site.baseurl}}/contact">Contact</a>
+  <a href="{{site.baseurl}}/about">About</a>
   </div>
 </header>
   <p>Responsive Column Cards <i>"Resize the browser window to see the effect."</i></p>
@@ -26,7 +26,7 @@
 <footer class="footer">
 &copy; 2021 Grid Jekyll Theme - Design by <a href="https://mohamadrido.com">Mohamad Rido</a>
 </footer>
-<script src="/cards-jekyll-theme-v2/assets/topnav.js"></script>
+<script src="{{site.baseurl}}/assets/topnav.js"></script>
 <!-- Scroll to Top -->
 <style>
 #myBtn {  display: none;  position: fixed;  bottom: 4.5em;  right: 1.5em;  z-index: 99;  font-size: 18px;  border: none;  outline: none;  background-color: #008eff;  color: white;  cursor: pointer;  padding: 0px 4px 0px 4px;  border-radius: 100%;} #myBtn:hover {  background-color: #0079de;}
@@ -36,8 +36,8 @@
 var mybutton = document.getElementById("myBtn");window.onscroll = function() {scrollFunction()};function scrollFunction() {  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {    mybutton.style.display = "block";  } else {    mybutton.style.display = "none";  }}function topFunction() {  document.body.scrollTop = 0;  document.documentElement.scrollTop = 0;}
 </script>
 <!-- Cookie Consent popup to comply with EU cookie law -->
-<link rel="stylesheet" type="text/css" href="/cards-jekyll-theme-v2/assets/cookieconsent.min.css"/>
-<script src="/cards-jekyll-theme-v2/assets/cookieconsent.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/cookieconsent.min.css"/>
+<script src="{{site.baseurl}}/assets/cookieconsent.min.js"></script>
 <script>
 window.addEventListener("load", function(){window.cookieconsent.initialise({"cookie": { "expiryDays": 730 },"palette": {"popup": { "background": "#212327" },"button": { "background": "#007bff" }},"theme": "classic"});});
 </script>
