@@ -1,5 +1,6 @@
 name: 'Grid Jekyll Theme'
 description: 'Responsive Column Cards'
+baseurl: 'https://mohamadrido.github.io/grid-jekyll-theme'
 url: 'https://mohamadrido.github.io/grid-jekyll-theme'
 author: 'Mohamad Rido'
 email: 'mohamad.rido@yandex.com'
