@@ -1,7 +1,7 @@
 name: 'Cards Jekyll Theme V2'
 description: 'Responsive Column Cards'
 baseurl: ''
-url: 'https://mohamadrido.github.io/grid-jekyll-theme'
+url: 'https://mohamadrido.github.io/cards-jekyll-theme-v2'
 author: 'Mohamad Rido'
 email: 'mohamad.rido@yandex.com'
 permalink: /:title
